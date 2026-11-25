@@ -5,7 +5,7 @@ public class ExcursionBuceo extends Excursion{
 	private double profundidad;
 	private boolean alquilerEquipo;
 	
-	private final int AÑADIDO = 75;
+	private final int AÑADIDO = 100;
 	
 	public ExcursionBuceo(String codigo, Destino destino, int numeroParticipantes,
             double distanciaRecorrida, double duracion, boolean certificado, double profundidad, boolean alquilerEquipo) {
@@ -62,7 +62,7 @@ public class ExcursionBuceo extends Excursion{
 	
 	public double calcularPrecio() {
 		if (isAlquilerEquipo())
-		return super.calcularPrecio() + AÑADIDO;
+			return super.calcularPrecio() + (super.calcularPrecio() + ( getNumeroParticipantes() * AÑADIDO));
 		return super.calcularPrecio();
 	
 

@@ -9,6 +9,7 @@ public class Excursion {
     private int numeroParticipantes;
     private double distanciaRecorrida;
     private double duracion;
+    
 
     public Excursion(String codigo, Destino destino, int numeroParticipantes,
                      double distanciaRecorrida, double duracion) {
@@ -17,6 +18,7 @@ public class Excursion {
         this.numeroParticipantes = numeroParticipantes;
         this.distanciaRecorrida = distanciaRecorrida;
         this.duracion = duracion;
+     
     }
 
     public Excursion(String codigo, String destino, int numeroParticipantes,
@@ -26,6 +28,7 @@ public class Excursion {
         this.numeroParticipantes = numeroParticipantes;
         this.distanciaRecorrida = distanciaRecorrida;
         this.duracion = duracion;
+        
     }
 
     private Destino convertirDestino(String destino) {
