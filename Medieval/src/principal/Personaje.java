@@ -47,11 +47,13 @@ public class Personaje {
 	}
 	
 	public void play() {
-		System.out.println(nombre + " realiza su actividad habitual en el reino.");
+		
 		
 	}
-	public int recibirDaño() {
+	public int recibirDaño(int cantidad) {
 		
+		puntosVida-=cantidad;
+		System.out.println(nombre + " recibe " + cantidad + " puntos de danio. Vida restante: " + puntosVida);
 		
 		return puntosVida;
 	}
